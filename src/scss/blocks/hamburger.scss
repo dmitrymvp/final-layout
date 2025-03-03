@@ -1,0 +1,43 @@
+.hamburger {
+  position: relative;
+  width: 18px;
+  height: 16px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  &:hover {
+    transition-duration: 0.3s;
+    transform: scale(110%);
+  }
+
+  &__item {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 18px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 1px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 14px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 1px;
+    }
+  }
+}

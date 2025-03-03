@@ -1,8 +1,33 @@
-$bgColor: #010e1d;
-$text: #fff;
+@import './libs/font.scss';
+@import './base/variables.scss';
 
-body {
-  padding: 1rem;
-  margin: 0;
+html {
+  box-sizing: border-box;
   font-family: 'TT Lakes', sans-serif;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@import './blocks/rounds.scss';
+@import './blocks/title.scss';
+@import './blocks/hamburger.scss';
+@import './blocks/more.scss';
+@import './blocks/header.scss';
+@import './blocks/logo.scss';
+@import './blocks/group-icons.scss';
+@import './blocks/repair-group-icons.scss';
+@import './blocks/main.scss';
+@import './blocks/navigation.scss';
+@import './blocks/description.scss';
+@import './blocks/side-menu.scss';
+@import './blocks/lang-switcher.scss';
+@import './blocks/close-btn.scss';
+@import './blocks/brands.scss';
+
+@import './base/media.scss';

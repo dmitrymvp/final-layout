@@ -1,0 +1,10 @@
+.header {
+  min-width: 320px;
+  height: 89px;
+  background-color: $secondBgColor;
+  padding: 18px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d9fff5;
+}

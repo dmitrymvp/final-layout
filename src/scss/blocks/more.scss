@@ -1,0 +1,28 @@
+.more {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  border: none;
+  background-color: #f8f8f8;
+  position: relative;
+  transition: color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $mainColor;
+  }
+
+  &::before {
+    content: url('../img/icons/arrow-down.svg');
+    position: absolute;
+    left: -23px;
+    transition: all 0.5s;
+  }
+
+  &--active {
+    &::before {
+      rotate: -180deg;
+    }
+  }
+}

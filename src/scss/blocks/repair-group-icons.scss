@@ -1,0 +1,14 @@
+.repair-group-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 117px;
+  list-style-type: none;
+
+  &::before {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+  }
+}

@@ -1,3 +1,9 @@
+import '../scss/libs/swiper-bundle.min.scss'
 import '../scss/style.scss'
 
-console.log('Works!')
+import { addSwiper } from './swiper-module'
+
+// import Swiper JS
+
+window.addEventListener('resize', addSwiper)
+window.addEventListener('load', addSwiper)

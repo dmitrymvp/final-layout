@@ -1,0 +1,44 @@
+.navigation {
+  &__list {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 14px;
+    overflow: scroll;
+    list-style: none;
+    scrollbar-width: none;
+  }
+
+  &__item {
+    display: block;
+    height: 40px;
+    margin-right: 3px;
+    padding: 8px 16px;
+
+    &:not(.navigation__item--active) {
+      a {
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      color: $secondTextColor;
+      text-decoration: none;
+      white-space: nowrap;
+      letter-spacing: -0.2px;
+    }
+
+    &--active {
+      border: solid 2px $subMainColor;
+      border-radius: 6px;
+      background-color: $secondBgColor;
+
+      a {
+        cursor: default;
+      }
+    }
+  }
+}

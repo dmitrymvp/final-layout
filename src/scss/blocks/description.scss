@@ -1,0 +1,27 @@
+.description {
+  padding: 26px 0;
+
+  &__text-wrapper {
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+  }
+
+  &__text {
+    height: 90px;
+    overflow: hidden;
+  }
+
+  &__more {
+    margin-top: 15px;
+    margin-left: 32px;
+  }
+
+  &__photo {
+    display: block;
+    margin-top: 12px;
+    width: 100vw;
+  }
+}

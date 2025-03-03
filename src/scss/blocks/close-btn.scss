@@ -1,0 +1,34 @@
+.close-btn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 17px;
+    width: 2px;
+    height: 20px;
+    background-color: $secondBgColor;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 17px;
+    width: 2px;
+    height: 20px;
+    background-color: $secondBgColor;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    transition-duration: 0.5s;
+    transform: rotate(90deg);
+  }
+}
