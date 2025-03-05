@@ -12,3 +12,11 @@
     background-color: #eaeaea;
   }
 }
+
+@media (min-width: 1024px) {
+  .repair-group-icons {
+    &::before {
+      display: none;
+    }
+  }
+}

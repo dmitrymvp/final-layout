@@ -1,4 +1,4 @@
-import Swiper from '../../node_modules/swiper/swiper-bundle'
+import Swiper from '../../../node_modules/swiper/swiper-bundle'
 
 let swiper = null
 

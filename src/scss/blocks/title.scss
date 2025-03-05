@@ -1,5 +1,5 @@
 .title {
-  padding: 16px;
+  padding: 17px 16px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -9,4 +9,16 @@
   color: $secondTextColor;
   text-transform: uppercase;
   background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+@media (min-width: 768px) {
+  .title {
+    padding: 16px 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    padding: 16px 32px;
+  }
 }

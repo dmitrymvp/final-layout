@@ -1,6 +1,6 @@
 .brands {
   background-color: $mainBgColor;
-  padding-bottom: 26px;
+  padding-bottom: 8px;
 
   .swiper {
     width: 100%;
@@ -27,5 +27,53 @@
 
   &__more {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .brands {
+    margin: 0 auto;
+    padding-bottom: 34px;
+    max-width: 1120px;
+
+    .container {
+      padding: 0 24px;
+      max-height: 185px;
+      transition: max-height 0.5s;
+
+      &--open {
+        max-height: 365px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+      justify-items: center;
+      column-gap: 24px;
+      row-gap: 16px;
+      margin-top: 24px;
+    }
+
+    &__item {
+      max-width: 240px;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+
+    &__more {
+      display: block;
+      margin-top: 24px;
+      margin-left: 58px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .brands {
+    .container {
+      padding: 0 32px;
+    }
   }
 }

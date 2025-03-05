@@ -1,5 +1,5 @@
 .description {
-  padding: 26px 0;
+  padding: 26px 0 17px 0;
 
   &__text-wrapper {
     padding: 0 16px;
@@ -23,5 +23,54 @@
     display: block;
     margin-top: 12px;
     width: 100vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .description {
+    padding: 31px 15px;
+    display: flex;
+    justify-content: space-around;
+
+    &__text-wrapper {
+      width: 45%;
+      padding: 2px 20px 2px 0;
+      line-height: 1.43;
+    }
+
+    &__text {
+      height: 120px;
+    }
+
+    &__more {
+      margin-top: 10px;
+      margin-left: 33px;
+    }
+
+    &__photo {
+      margin-top: 0;
+      width: 50%;
+      padding-left: 10px;
+      border-radius: 3%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    &__text {
+      height: 160px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    padding: 0px 18px;
+
+    &__text-wrapper {
+      width: 47%;
+      padding: 11px 10px 2px 0;
+    }
   }
 }

@@ -8,3 +8,44 @@
   align-items: center;
   border-bottom: 2px solid #d9fff5;
 }
+
+@media (min-width: 576px) {
+  .header {
+    padding: 18px 24px;
+
+    &__logo {
+      width: 34%;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        display: block;
+        margin-right: 22px;
+        width: 2px;
+        height: 32px;
+        background-color: $dividerColor;
+      }
+
+      &__img {
+        display: block;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__logo {
+      width: 49%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: none;
+  }
+}

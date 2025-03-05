@@ -1,6 +1,6 @@
 .main {
   background-color: $mainBgColor;
-  padding: 25px 0;
+  padding-top: 25px;
   position: relative;
   overflow: hidden;
 
@@ -24,5 +24,51 @@
 
   &__repair-group-icons {
     display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .main {
+    &__title {
+      margin-left: 24px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 43px 9px;
+
+    &__repair-group-icons {
+      display: flex;
+      position: absolute;
+      top: 43px;
+      right: 31px;
+      width: 372px;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        align-items: center;
+
+        button {
+          margin-left: 9px;
+        }
+
+        &:hover {
+          color: $secondTextColor;
+
+          .round {
+            box-shadow: 0 0 10px $mainColor;
+          }
+        }
+      }
+    }
   }
 }

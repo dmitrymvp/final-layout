@@ -42,3 +42,27 @@
     }
   }
 }
+
+@media (min-width: 576px) {
+  .navigation {
+    &__list {
+      margin-top: 32px;
+      margin-left: 22px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    &__list {
+      margin-top: 0;
+      margin-left: 24px;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-top: 9px;
+    }
+  }
+}
