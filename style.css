@@ -667,7 +667,7 @@ html {
     background-color: #ff3e79; }
 
 .title {
-  padding: 16px;
+  padding: 17px 16px;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -677,6 +677,14 @@ html {
   color: #7e7e82;
   text-transform: uppercase;
   background: linear-gradient(to right, #f8f8f8, #ffffff); }
+
+@media (min-width: 768px) {
+  .title {
+    padding: 16px 24px; } }
+
+@media (min-width: 1024px) {
+  .title {
+    padding: 16px 32px; } }
 
 .hamburger {
   position: relative;
@@ -733,6 +741,10 @@ html {
   .more--active::before {
     rotate: -180deg; }
 
+@media (min-width: 768px) {
+  .more {
+    letter-spacing: 0.2px; } }
+
 .header {
   min-width: 320px;
   height: 89px;
@@ -742,6 +754,33 @@ html {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #d9fff5; }
+
+@media (min-width: 576px) {
+  .header {
+    padding: 18px 24px; }
+    .header__logo {
+      width: 34%;
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .header__logo::before {
+        content: '';
+        display: block;
+        margin-right: 22px;
+        width: 2px;
+        height: 32px;
+        background-color: #eaeaea; }
+      .header__logo__img {
+        display: block;
+        align-self: flex-end; } }
+
+@media (min-width: 768px) {
+  .header__logo {
+    width: 49%; } }
+
+@media (min-width: 1024px) {
+  .header {
+    display: none; } }
 
 .logo {
   height: 52px; }
@@ -756,6 +795,10 @@ html {
   justify-content: space-between;
   list-style-type: none; }
 
+@media (min-width: 576px) {
+  .group-icons {
+    display: flex; } }
+
 .repair-group-icons {
   display: flex;
   justify-content: space-between;
@@ -768,9 +811,13 @@ html {
     height: 32px;
     background-color: #eaeaea; }
 
+@media (min-width: 1024px) {
+  .repair-group-icons::before {
+    display: none; } }
+
 .main {
   background-color: #f8f8f8;
-  padding: 25px 0;
+  padding-top: 25px;
   position: relative;
   overflow: hidden; }
   .main__title {
@@ -789,6 +836,36 @@ html {
       background-color: #41f6d7; }
   .main__repair-group-icons {
     display: none; }
+
+@media (min-width: 576px) {
+  .main__title {
+    margin-left: 24px; } }
+
+@media (min-width: 1024px) {
+  .main {
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 43px 9px; }
+    .main__repair-group-icons {
+      display: flex;
+      position: absolute;
+      top: 43px;
+      right: 31px;
+      width: 372px; }
+      .main__repair-group-icons a {
+        display: flex;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        align-items: center; }
+        .main__repair-group-icons a button {
+          margin-left: 9px; }
+        .main__repair-group-icons a:hover {
+          color: #7e7e82; }
+          .main__repair-group-icons a:hover .round {
+            box-shadow: 0 0 10px #ff3e79; } }
 
 .navigation__list {
   display: flex;
@@ -819,8 +896,22 @@ html {
     .navigation__item--active a {
       cursor: default; }
 
+@media (min-width: 576px) {
+  .navigation__list {
+    margin-top: 32px;
+    margin-left: 22px; } }
+
+@media (min-width: 1024px) {
+  .navigation__list {
+    margin-top: 0;
+    margin-left: 24px;
+    overflow: hidden;
+    flex-wrap: wrap; }
+  .navigation__item {
+    margin-top: 9px; } }
+
 .description {
-  padding: 26px 0; }
+  padding: 26px 0 17px 0; }
   .description__text-wrapper {
     padding: 0 16px;
     font-size: 14px;
@@ -837,6 +928,37 @@ html {
     display: block;
     margin-top: 12px;
     width: 100vw; }
+
+@media (min-width: 576px) {
+  .description {
+    padding: 31px 15px;
+    display: flex;
+    justify-content: space-around; }
+    .description__text-wrapper {
+      width: 45%;
+      padding: 2px 20px 2px 0;
+      line-height: 1.43; }
+    .description__text {
+      height: 120px; }
+    .description__more {
+      margin-top: 10px;
+      margin-left: 33px; }
+    .description__photo {
+      margin-top: 0;
+      width: 50%;
+      padding-left: 10px;
+      border-radius: 3%; } }
+
+@media (min-width: 768px) {
+  .description__text {
+    height: 160px; } }
+
+@media (min-width: 1024px) {
+  .description {
+    padding: 0px 18px; }
+    .description__text-wrapper {
+      width: 47%;
+      padding: 11px 10px 2px 0; } }
 
 .side-menu {
   overflow: scroll;
@@ -973,7 +1095,7 @@ html {
 
 .brands {
   background-color: #f8f8f8;
-  padding-bottom: 26px; }
+  padding-bottom: 8px; }
   .brands .swiper {
     width: 100%;
     min-height: 130px;
@@ -994,59 +1116,7 @@ html {
   .brands__more {
     display: none; }
 
-@media (min-width: 576px) {
-  .header {
-    padding: 18px 24px; }
-    .header__logo {
-      width: 34%;
-      position: relative;
-      display: flex;
-      align-items: center; }
-      .header__logo::before {
-        content: '';
-        display: block;
-        margin-right: 22px;
-        width: 2px;
-        height: 32px;
-        background-color: #eaeaea; }
-      .header__logo__img {
-        display: block;
-        align-self: flex-end; }
-  .group-icons {
-    display: flex; }
-  .main__title {
-    margin-left: 24px; }
-  .navigation__list {
-    margin-top: 32px;
-    margin-left: 22px; }
-  .description {
-    padding: 31px 15px;
-    display: flex;
-    justify-content: space-around; }
-    .description__text-wrapper {
-      width: 45%;
-      padding: 2px 20px 2px 0;
-      line-height: 1.43; }
-    .description__text {
-      height: 120px; }
-    .description__more {
-      margin-top: 10px;
-      margin-left: 33px; }
-    .description__photo {
-      margin-top: 0;
-      width: 50%;
-      padding-left: 10px;
-      border-radius: 3%; } }
-
 @media (min-width: 768px) {
-  .header__logo {
-    width: 49%; }
-  .description__text {
-    height: 160px; }
-  .title {
-    padding: 16px 24px; }
-  .more {
-    letter-spacing: 0.2px; }
   .brands {
     margin: 0 auto;
     padding-bottom: 34px;
@@ -1073,50 +1143,6 @@ html {
       display: block;
       margin-top: 24px;
       margin-left: 58px; } }
-
-@media (min-width: 1024px) {
-  .title {
-    padding: 16px 32px; }
-  .header {
-    display: none; }
-  .main {
-    margin: 0 auto;
-    max-width: 1120px;
-    padding: 43px 9px; }
-    .main__repair-group-icons {
-      display: flex;
-      position: absolute;
-      top: 43px;
-      right: 31px;
-      width: 372px; }
-      .main__repair-group-icons a {
-        display: flex;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        letter-spacing: -0.2px;
-        color: #1b1c21;
-        align-items: center; }
-        .main__repair-group-icons a button {
-          margin-left: 9px; }
-        .main__repair-group-icons a:hover {
-          color: #7e7e82; }
-          .main__repair-group-icons a:hover .round {
-            box-shadow: 0 0 10px #ff3e79; }
-  .repair-group-icons::before {
-    display: none; }
-  .navigation__list {
-    margin-top: 0;
-    margin-left: 24px;
-    overflow: hidden;
-    flex-wrap: wrap; }
-  .navigation__item {
-    margin-top: 9px; }
-  .description {
-    padding: 0px 18px; }
-    .description__text-wrapper {
-      width: 47%;
-      padding: 11px 10px 2px 0; } }
 
 @media (min-width: 1440px) {
   .brands .container {
