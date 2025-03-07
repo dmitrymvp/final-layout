@@ -1,0 +1,208 @@
+.prices {
+  background-color: $mainBgColor;
+  overflow-x: hidden;
+
+  &__swiper {
+    padding: 16px;
+  }
+
+  &__list {
+    background-color: $mainBgColor;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'service service'
+      'price price'
+      'term order';
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    border-radius: 6px;
+    border: solid 1px #eaeaea;
+    background-color: $secondBgColor;
+    box-sizing: border-box;
+  }
+
+  &__service {
+    grid-area: service;
+  }
+
+  &__price {
+    padding-top: 13px;
+    grid-area: price;
+  }
+
+  &__term {
+    grid-area: term;
+    padding-top: 13px;
+  }
+
+  .main-btn {
+    grid-area: order;
+    width: 119px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-align: left;
+    color: #7e7e82;
+  }
+
+  &__text {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #1b1c21;
+  }
+
+  &__pagination {
+    position: relative;
+    top: 40px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  &__disclaimer {
+    max-width: 460px;
+    padding: 0 16px;
+    margin-top: 26px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $mainTextColor;
+  }
+  &__offer {
+    padding: 0 16px;
+    margin-top: 17px;
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: -0.2px;
+      text-align: left;
+      color: #1b1c21;
+      &::after {
+        content: url('../img/icons/dropdown.svg');
+        position: relative;
+        left: 5px;
+        top: 1px;
+      }
+    }
+  }
+
+  .header-table {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .prices {
+    margin: 0 auto;
+    padding-bottom: 34px;
+    max-width: 1120px;
+
+    .container {
+      padding: 0 24px;
+    }
+
+    .header-table {
+      display: flex;
+      width: 90%;
+      margin: 28px auto 0 auto;
+      font-size: 14px;
+      color: #7e7e82;
+      // padding-right: 10%;
+      &__service {
+        width: 56%;
+      }
+      &__price {
+        width: 14%;
+        padding: 0;
+      }
+
+      &__term {
+        width: 16%;
+        padding: 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 14px;
+      background-color: $secondBgColor;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    &__item {
+      display: flex;
+      padding: 16px 0;
+      min-width: 95%;
+      margin: 0 auto;
+      height: 65px;
+      border: none;
+      border-radius: 0;
+      border-bottom: solid 1px #eaeaea;
+    }
+
+    &__service {
+      width: 56%;
+      text-align: left;
+    }
+
+    &__price {
+      width: 14%;
+      padding: 0;
+    }
+
+    &__term {
+      width: 16%;
+      padding: 0;
+    }
+
+    .main-btn {
+      width: 120px;
+      margin: 0;
+      margin-left: auto;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+
+    &__more {
+      display: block;
+      margin-top: 8px;
+      margin-left: 58px;
+    }
+    &__subtitle {
+      display: none;
+    }
+
+    &__disclaimer {
+      padding: 0 24px;
+    }
+
+    &__offer {
+      padding: 0 24px;
+    }
+  }
+}

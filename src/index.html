@@ -124,7 +124,7 @@
       </section>
     </main>
 
-    <aside class="side-menu">
+    <aside class="side-menu" hidden>
       <header class="side-menu__header">
         <button class="round round--pink-full">
           <div class="side-menu__close-btn close-btn"></div>
@@ -198,7 +198,7 @@
 
     <section class="brands">
       <h3 class="title">ремонт техники различных брендов</h3>
-      <div class="container swiper">
+      <div class="container brands__swiper swiper">
         <ul class="brands__list swiper-wrapper">
           <li class="brands__item swiper-slide">
             <img src="img/icons/brands/lenovo.svg" alt="" />
@@ -274,7 +274,7 @@
 
     <section class="devices">
       <h3 class="title">ремонт различных видов техники</h3>
-      <div class="container swiper">
+      <div class="container devices__swiper">
         <ul class="devices__list swiper-wrapper">
           <li class="devices__item swiper-slide">
             <h4 class="devices__header">Ремонт ноутбуков</h4>
@@ -283,31 +283,31 @@
             /></button>
           </li>
           <li class="devices__item swiper-slide">
-            <h4 class="devices__header">Ремонт ноутбуков</h4>
+            <h4 class="devices__header">Ремонт планшетов</h4>
             <button class="round"
               ><img src="img/icons/dropdown.svg" alt=""
             /></button>
           </li>
           <li class="devices__item swiper-slide">
-            <h4 class="devices__header">Ремонт ноутбуков</h4>
+            <h4 class="devices__header">Ремонт ПК</h4>
             <button class="round"
               ><img src="img/icons/dropdown.svg" alt=""
             /></button>
           </li>
           <li class="devices__item swiper-slide">
-            <h4 class="devices__header">Ремонт ноутбуков</h4>
+            <h4 class="devices__header">Ремонт мониторов</h4>
             <button class="round"
               ><img src="img/icons/dropdown.svg" alt=""
             /></button>
           </li>
           <li class="devices__item swiper-slide">
-            <h4 class="devices__header">Ремонт ноутбуков</h4>
+            <h4 class="devices__header">Ремонт колонок</h4>
             <button class="round"
               ><img src="img/icons/dropdown.svg" alt=""
             /></button>
           </li>
           <li class="devices__item swiper-slide">
-            <h4 class="devices__header">Ремонт ноутбуков</h4>
+            <h4 class="devices__header">Ремонт телефонов</h4>
             <button class="round"
               ><img src="img/icons/dropdown.svg" alt=""
             /></button>
@@ -331,9 +331,207 @@
             /></button>
           </li>
         </ul>
-        <div class="swiper-pagination"></div>
+        <div class="devices__pagination">
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
-      <button class="brands__more more" id="brands__more">Показать все</button>
+      <button class="devices__more more" id="devices__more"
+        >Показать все</button
+      >
     </section>
+
+    <section class="prices">
+      <h3 class="title">Цены на услуги</h3>
+      <div class="header-table">
+        <div class="header-table__service">Ремонтные услуги</div>
+        <div class="header-table__price">Цена</div>
+        <div class="header-table__term">Срок</div>
+      </div>
+      <div class="container prices__swiper">
+        <ul class="prices__list swiper-wrapper">
+          <li class="prices__item swiper-slide">
+            <div class="prices__service">
+              <div class="prices__subtitle">Ремонтные услуги</div>
+              <p class="prices__text">Диагностика</p>
+            </div>
+            <div class="prices__price">
+              <div class="prices__subtitle">Цена</div>
+              <p class="prices__text">Бесплатно</p>
+            </div>
+            <div class="prices__term">
+              <div class="prices__subtitle">Срок</div>
+              <p class="prices__text">30 мин</p>
+            </div>
+            <button class="main-btn modal__submit" type="submit"
+              >Заказать <img src="img/icons/dropdownwhite.svg" alt="" />
+            </button>
+          </li>
+          <li class="prices__item swiper-slide">
+            <div class="prices__service">
+              <div class="prices__subtitle">Ремонтные услуги</div>
+              <p class="prices__text">Замена дисплея</p>
+            </div>
+            <div class="prices__price">
+              <div class="prices__subtitle">Цена</div>
+              <p class="prices__text">1 000 ₽</p>
+            </div>
+            <div class="prices__term">
+              <div class="prices__subtitle">Срок</div>
+              <p class="prices__text">30-120 мин</p>
+            </div>
+            <button class="main-btn modal__submit" type="submit"
+              >Заказать <img src="img/icons/dropdownwhite.svg" alt="" />
+            </button>
+          </li>
+          <li class="prices__item swiper-slide">
+            <div class="prices__service">
+              <div class="prices__subtitle">Ремонтные услуги</div>
+              <p class="prices__text">Замена полифонического динамика</p>
+            </div>
+            <div class="prices__price">
+              <div class="prices__subtitle">Цена</div>
+              <p class="prices__text">1 000 ₽</p>
+            </div>
+            <div class="prices__term">
+              <div class="prices__subtitle">Срок</div>
+              <p class="prices__text">30-120 мин</p>
+            </div>
+            <button class="main-btn modal__submit" type="submit"
+              >Заказать <img src="img/icons/dropdownwhite.svg" alt="" />
+            </button>
+          </li>
+          <li class="prices__item swiper-slide">
+            <div class="prices__service">
+              <div class="prices__subtitle">Ремонтные услуги</div>
+              <p class="prices__text"
+                >Тестирование с выдачей технического заключения</p
+              >
+            </div>
+            <div class="prices__price">
+              <div class="prices__subtitle">Цена</div>
+              <p class="prices__text">1 000 ₽</p>
+            </div>
+            <div class="prices__term">
+              <div class="prices__subtitle">Срок</div>
+              <p class="prices__text">30-120 мин</p>
+            </div>
+            <button class="main-btn modal__submit" type="submit"
+              >Заказать <img src="img/icons/dropdownwhite.svg" alt="" />
+            </button>
+          </li>
+          <li class="prices__item swiper-slide">
+            <div class="prices__service">
+              <div class="prices__subtitle">Ремонтные услуги</div>
+              <p class="prices__text">Замена программного обеспечения</p>
+            </div>
+            <div class="prices__price">
+              <div class="prices__subtitle">Цена</div>
+              <p class="prices__text">1 000 ₽</p>
+            </div>
+            <div class="prices__term">
+              <div class="prices__subtitle">Срок</div>
+              <p class="prices__text">30-120 мин</p>
+            </div>
+            <button class="main-btn modal__submit" type="submit"
+              >Заказать <img src="img/icons/dropdownwhite.svg" alt="" />
+            </button>
+          </li>
+        </ul>
+        <div class="prices__pagination">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <p class="prices__disclaimer"
+        >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+        услугу. Для получения коммерческого предложения на постоянное
+        обслуживание, оставьте заявку.</p
+      >
+      <p class="prices__offer"
+        ><a href="#">Получить коммерческое предложение </a></p
+      >
+    </section>
+
+    <section class="modal" hidden>
+      <button class="round round--pink-full" id="modal-feedback-close-btn">
+        <div class="close-btn"></div>
+      </button>
+      <h3 class="modal__title">Обратная связь</h3>
+      <form action="" class="modal__form">
+        <input
+          class="modal__input"
+          type="text"
+          name="text"
+          id=""
+          placeholder="Имя"
+          required
+        />
+        <input
+          class="modal__input"
+          type="tel"
+          name="tel"
+          id=""
+          placeholder="Телефон"
+          required
+        />
+        <input
+          class="modal__input"
+          type="email"
+          name="email"
+          id=""
+          placeholder="Электронная почта"
+          required
+        />
+        <textarea
+          class="modal__textarea"
+          rows="4"
+          placeholder="Сообщение"
+          required
+        ></textarea>
+        <p class="modal__text"
+          >Нажимая “отправить”, вы даете согласие на
+          <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
+          <a href="#">политикой конфиденциальности</a></p
+        >
+        <button class="main-btn modal__submit" type="submit"
+          >Отправить
+          <img src="img/icons/dropdownwhite.svg" alt="" />
+        </button>
+      </form>
+    </section>
+
+    <section class="modal" hidden>
+      <button class="round round--pink-full" id="modal-call-close-btn">
+        <div class="close-btn"></div>
+      </button>
+      <h3 class="modal__title">Заказать звонок</h3>
+      <form action="" class="modal__form">
+        <input
+          class="modal__input"
+          type="tel"
+          name="tel"
+          id=""
+          placeholder="Телефон"
+          required
+        />
+        <p class="modal__text"
+          >Нажимая “отправить”, вы даете согласие на
+          <a href="#">обработку персональных данных</a> и соглашаетесь с нашей
+          <a href="#">политикой конфиденциальности</a></p
+        >
+
+        <button class="main-btn modal__submit" type="submit"
+          >Отправить<img src="img/icons/dropdownwhite.svg" alt=""
+        /></button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">© 2019 CPS <br />Разработано командой Apesong</p>
+      <p class="footer__text"><a href="">Политика конфиденциальности</a></p>
+      <p class="footer__text"
+        >Информация, размещенная на данной странице, не является публичной
+        офертой</p
+      >
+    </footer>
   </body>
 </html>
