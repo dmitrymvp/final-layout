@@ -1,15 +1,26 @@
-export function showBrandsMore() {
-  let brandsMoreElement = document.querySelector('#brands__more')
-  let containerElement = document.querySelector('.container')
-  let moreElement = document.querySelectorAll('.more')[1]
-
-  brandsMoreElement.addEventListener('click', function () {
-    containerElement.classList.toggle('container--open')
-    moreElement.classList.toggle('more--active')
-    if (containerElement.classList.contains('container--open')) {
-      brandsMoreElement.textContent = 'Скрыть'
+export function showMore(element, container) {
+  element.addEventListener('click', function () {
+    container.classList.toggle('container--open')
+    element.classList.toggle('more--active')
+    if (container.classList.contains('container--open')) {
+      element.textContent = 'Скрыть'
     } else {
-      brandsMoreElement.textContent = 'Показать все'
+      element.textContent = 'Показать все'
+    }
+  })
+}
+
+let readMoreElement = document.querySelector('#description__more')
+let readContainer = document.querySelector('.description__text')
+
+export function readMore() {
+  readMoreElement.addEventListener('click', function () {
+    readContainer.classList.toggle('description__text--open')
+    readMoreElement.classList.toggle('more--active')
+    if (readContainer.classList.contains('description__text--open')) {
+      readMoreElement.textContent = 'Скрыть'
+    } else {
+      readMoreElement.textContent = 'Читать далее'
     }
   })
 }

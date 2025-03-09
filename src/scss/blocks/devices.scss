@@ -66,13 +66,13 @@
       transition: max-height 0.5s;
       overflow-y: hidden;
       max-height: 200px;
+      &--open {
+        max-height: 555px;
+      }
     }
 
     .devices__swiper {
       min-height: 0;
-    }
-    &--open {
-      max-height: 555px;
     }
 
     &__list {
